@@ -10,7 +10,13 @@ Test for a specific combination and print the result:
 import brutal
 
 def checker(guess):
-    return guess == "pass"
+    return guess == "passw"
 
-print(brutal.force("qwertyuiopasdfghjklzxcvbnm", 4, checker))
+print(brutal.force("qwertyuiopasdfghjklzxcvbnm", 5, checker))
+```
+Using an array of strings:
+```python
+import brutal
+
+brutal.force(["correct", "horse", "battery", "staple"], 4, print)
 ```
