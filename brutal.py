@@ -2,9 +2,8 @@
 # github.com/programical
 # simple brute force algorithm
 
-# force(str/array, int, function)
 # returns False when out of options, returns True when callback does
-def force(symbols, length, callback):
+def force(symbols: list, length: int, callback: callable) -> bool:
     return recursiveFor("", 1, symbols, length, callback)
 
 # use the force() wrapper instead of this
